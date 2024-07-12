@@ -1,3 +1,19 @@
 ### index handler
 
 GET http://localhost:8080/
+
+### update handler
+
+PATCH http://localhost:8080/
+Content-Type: application/json
+{
+  "skills": ["Rust", "Go", "JavaScript"]
+}
+
+### invalid request
+
+PATCH http://localhost:8080/
+Content-Type: application/json
+{
+  "skills": "Rust"
+}
