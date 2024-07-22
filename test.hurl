@@ -1,5 +1,8 @@
-PATCH http://localhost:8081/
+### url shortener
+
+POST http://localhost:9876/
 Content-Type: application/json
+
 {
-  "skills": ["Rust"]
+  "url": "https://baidu.com"
 }
